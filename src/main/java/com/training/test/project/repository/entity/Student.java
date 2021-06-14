@@ -21,6 +21,42 @@ public class Student {
 	
 	@Column(name="COURSE_NAME")
 	private String courseName;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getStudentName() {
+		return studentName;
+	}
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
+	public String getCourseName() {
+		return courseName;
+	}
+
+	public void setCourseName(String courseName) {
+		this.courseName = courseName;
+	}
+
+	public Student(long id, String studentName, String courseName) {
+		super();
+		this.id = id;
+		this.studentName = studentName;
+		this.courseName = courseName;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", studentName=" + studentName + ", courseName=" + courseName + "]";
+	}
 	
 	
 

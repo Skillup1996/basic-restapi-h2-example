@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestApi {
 
 	
-	@GetMapping
+	@GetMapping("/testing")
 	public ResponseEntity<?> testGetMethod(){
 		
 		return ResponseEntity.ok("Get Mapping is working fine");
